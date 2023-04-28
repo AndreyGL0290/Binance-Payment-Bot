@@ -1,5 +1,5 @@
 import homePageReroute from "./RerouteFunc"
-import tg from "./telegram"
+import tg from "./telegram/main"
 
 function closeImage() {
     document.getElementById('image-loader').style.display = 'none'

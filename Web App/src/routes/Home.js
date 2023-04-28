@@ -1,16 +1,19 @@
+import { mainButtonBasket, redirectPage } from "../telegram/mainButtonFunctions"
 import { Link } from "react-router-dom"
+import tg from "../telegram/main"
 import '../css/placeholder.css'
 import basket from "../basket"
-import tg from "../telegram"
 import Image from "./Image"
-
 const Home = props => {
-    if (tg.MainButton.isVisible) tg.MainButton.hide()
     if (tg.BackButton.isVisible) tg.BackButton.hide()
 
-    let basketButton = <></>
-    if (Object.keys(basket.products).length === 0) basketButton = <></>
-    else basketButton = <div className="basket-button-container"><Link to="../basket" className="basket-button" onClick={() => {window.scrollTo(0,0)}}>Перейти в корзину</Link></div>
+    if (Object.keys(basket.products).length === 0) {
+        tg.MainButton.show()
+        tg.MainButton.onClick(() => {
+            mainButtonBasket(tg)
+            redirectPage('#/basket')
+        })
+    } else tg.MainButton.hide()
 
     let data = []
     for (let i = 0; i < Math.ceil(Object.keys(props.groups).length / 2); i++){
@@ -31,7 +34,6 @@ const Home = props => {
                 )
             })}
         </div>
-        {basketButton}
     </>
     )
 }

@@ -1,14 +1,21 @@
+import { mainButtonConfirm, sendDataToBot } from "../telegram/mainButtonFunctions"
 import { Link } from "react-router-dom"
+import tg from '../telegram/main'
 import { useState } from "react"
 import basket from "../basket"
-import tg from '../telegram'
 import '../css/basket.css'
 
 const Basket = () => {
     window.scrollTo(0,0)
     window.sessionStorage.setItem('products', JSON.stringify(basket.products))
     if (!tg.BackButton.isVisible) tg.BackButton.show()
-    if (!tg.MainButton.isVisible) tg.MainButton.show()
+    if (!tg.MainButton.isVisible) {
+        tg.MainButton.onClick(() => {
+            mainButtonConfirm(tg)
+            sendDataToBot(tg)
+        })
+        tg.MainButton.show()
+    }
 
     let [x, setDelete] = useState(false)
     // document.getElementsByClassName('middle-container')[0].style.justifyContent = 'center'

@@ -6,7 +6,7 @@ import Basket from "./routes/Basket"
 import Home from "./routes/Home"
 import menu from './menu'
 import './css/App.css'
-import tg from "./telegram"
+import tg from "./telegram/main"
 import closeImage from "./closeImageFunc"
 import homePageReroute from "./RerouteFunc"
 

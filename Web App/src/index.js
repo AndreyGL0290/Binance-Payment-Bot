@@ -4,7 +4,7 @@ import './css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter } from 'react-router-dom';
-import tg from './telegram'
+import tg from './telegram/main'
 
 tg.expand()
 

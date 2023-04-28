@@ -91,7 +91,7 @@ def confirm_buttons(change_delivery_button: bool = False):
 
 # Creates reply keyboard buttons above actual user keyboard
 def web_app_keyboard():
-    web_app = WebAppInfo(url="https://andreygl0290.github.io/Frost-Tasty-React/#/")
+    web_app = WebAppInfo(url="https://andreygl0290.github.io/Binance-Payment-Bot/#/")
     keyboard = RKM(
         keyboard=[
             [KB(text="Сделать заказ", web_app=web_app)]

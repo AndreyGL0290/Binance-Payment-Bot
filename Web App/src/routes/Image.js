@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useLocation } from "react-router-dom"
 import closeImage from "../closeImageFunc"
 import homePageReroute from "../RerouteFunc"
-import tg from "../telegram"
+import tg from "../telegram/main"
 
 const Image = props => {
     let [load, setLoad] = useState(false)

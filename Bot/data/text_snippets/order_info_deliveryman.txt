@@ -1,0 +1,7 @@
+Имя: {name}
+
+<b>Сумма</b>: {total_price} ₾
+<b>Оплата</b>: {payment_type}
+
+{address}{delivery_time}
+{phone_number}

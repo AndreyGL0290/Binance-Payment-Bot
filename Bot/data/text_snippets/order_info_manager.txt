@@ -1,0 +1,18 @@
+<b>Номер заказа</b>: {order_id}
+
+
+Имя: {name}
+
+<b>Заказ</b>:
+➖➖➖➖➖➖➖
+{order_content}
+➖➖➖➖➖➖➖
+{delivery_tax} ₾
+
+<b>Итого</b>: {total_price} ₾
+
+{address}
+
+{phone_number}{delivery_time}
+
+<b>Оплата</b>: {payment_type}

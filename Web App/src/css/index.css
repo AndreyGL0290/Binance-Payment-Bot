@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height:100%;
+}
+
+.middle-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 400px){
+  .inner-container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 95%;
+    gap: 7em;
+  }
+}
+
+@media only screen and (min-width: 400px){
+  .inner-container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 380px;
+    gap: 7em;
+  }
+}
+.interface-container {
+  height: 100%;
+}
+
+.cards {
+  grid-template-rows: auto auto auto;
+  display: grid;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.label-container {
+  display: grid;
+  grid-template-columns:  40% 40%;
+  column-gap: 20%;
+  justify-items: center;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns:  40% 40%;
+  column-gap: 20%;
+  justify-items: center;
+  align-items: center;
+}
+
+.image-subcontainer{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image-label{
+  color: grey;
+  font-size: 14px;
+}
+
+.price-container {
+  display: grid;
+  grid-template-columns:  40% 40%;
+  column-gap: 20%;
+  justify-items: center;
+  align-items: center;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns:  40% 40%;
+  column-gap: 20%;
+  justify-items: center;
+}
+
+.card-label {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.card-image {
+  height: auto;
+  float: left;
+  border-radius: 12%;
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  transition: 100ms;
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 37px;
+
+  margin-top: 10px;
+
+  border-radius: 5px;
+  border-width: 1px;
+
+  color: black;
+  background-color: #FFBF00;
+
+  font-family: 'montserrat';
+  font-weight: 500;
+  border: 0;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card-price {
+  margin-top: 10px;
+}
+
+#image-loader {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: none;
+}

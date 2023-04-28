@@ -1,0 +1,17 @@
+### Python cache ###
+*\__pycache__
+
+### ENV files ###
+*.env
+
+### TODO ###
+TODO
+
+### DB ###
+*.db
+*.db-journal
+*.sql
+*.wml
+
+### OUT files ###
+*.out

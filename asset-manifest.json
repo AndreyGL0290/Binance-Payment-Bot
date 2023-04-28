@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Frost-Tasty-React/static/css/main.21302357.css",
-    "main.js": "/Frost-Tasty-React/static/js/main.ce8dd1ce.js",
-    "static/js/787.1152285b.chunk.js": "/Frost-Tasty-React/static/js/787.1152285b.chunk.js",
-    "index.html": "/Frost-Tasty-React/index.html",
-    "main.21302357.css.map": "/Frost-Tasty-React/static/css/main.21302357.css.map",
-    "main.ce8dd1ce.js.map": "/Frost-Tasty-React/static/js/main.ce8dd1ce.js.map",
-    "787.1152285b.chunk.js.map": "/Frost-Tasty-React/static/js/787.1152285b.chunk.js.map"
+    "main.css": "/Binance-Payment-Bot/static/css/main.21302357.css",
+    "main.js": "/Binance-Payment-Bot/static/js/main.b880d03d.js",
+    "static/js/787.1152285b.chunk.js": "/Binance-Payment-Bot/static/js/787.1152285b.chunk.js",
+    "index.html": "/Binance-Payment-Bot/index.html",
+    "main.21302357.css.map": "/Binance-Payment-Bot/static/css/main.21302357.css.map",
+    "main.b880d03d.js.map": "/Binance-Payment-Bot/static/js/main.b880d03d.js.map",
+    "787.1152285b.chunk.js.map": "/Binance-Payment-Bot/static/js/787.1152285b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21302357.css",
-    "static/js/main.ce8dd1ce.js"
+    "static/js/main.b880d03d.js"
   ]
 }
